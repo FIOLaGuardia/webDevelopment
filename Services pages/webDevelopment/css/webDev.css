@@ -48,6 +48,7 @@ hr {
 }
 
 .modal-content {
+  overflow-y: auto; 
   margin-top: 105px;
   min-height: 100%; 
   height: auto;
