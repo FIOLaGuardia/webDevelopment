@@ -124,11 +124,57 @@ Artur's code
   margin-right: 5px;
 }
 
-
-
-.modal-content.professional_bg {
-  background-image: url('images/a.png');
+.modal-content.modal-content-web-development {
+  height: 100%;
+  background-color: transparent !important;
 }
+
+.modal-open[style] {
+padding-right: 0px !important;
+}
+
+.modal.fade.in[style]{
+  padding-right: 0px !important;
+}
+
+.modal.modal-site-features {
+  display: none;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  -webkit-overflow-scrolling: touch;
+  outline: 0; }
+  .modal.fade .modal-dialog.modal-site-features {
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    -o-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out; }
+.modal.in .modal-dialog.modal-site-features {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0); 
+  }
+
+.modal-content.modal-site-features {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  outline: 0; 
+}
+
 
 .modal-h4 {
   color: #066091;
