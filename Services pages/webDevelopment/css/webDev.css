@@ -1,3 +1,56 @@
+/*===============================================
+Site global
+=================================================*/
+/*need to be included at all pages*/
+#site-inner {
+  margin-top: 105px;
+}
+@media (max-width: 992px) {
+  #site-inner {
+    margin-top: 0px;
+  }
+}
+
+
+/*===============================================
+Slider styling
+=================================================*/
+
+.item-services-webDev {
+  max-height: 500px;
+}
+
+#carouselButtons {
+  position: absolute;
+  right: 7%;
+  bottom: 35px;
+  z-index: 15;
+  list-style: none;
+  text-align: center;
+}
+
+.carousel-indicators-custom li {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 1px;
+  text-indent: -999px;
+  border: 1px solid #777;
+  border-radius: 0px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: transparent;
+}
+.carousel-indicators-custom .active {
+  margin: 0;
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+}
+
+
+
+
 /*Selection menu with five business categories and special offer*/
 .special_offer {
   color: white;

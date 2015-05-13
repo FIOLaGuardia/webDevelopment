@@ -36,6 +36,8 @@
     <link rel="stylesheet" href="css/slick.css">
     <script type="text/javascript" src="js/modernizr.custom.32033.js"></script>
 	<link rel="stylesheet" href="css/all.css">
+    <!-- Web developmen service page css-->
+    <link rel="stylesheet" href="css/webDev.css">
 	<script src="js/modernizr.custom.63321.js"></script>
 </head>
 <body>
@@ -71,393 +73,405 @@
 		</div>
 	</header>
     <!-- Translate all comments to english-->
-	<!-- НАЧАЛО КАРУСЕЛИ-->
-    <div class="container hidden-xs">
-    	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-      		<!-- Indicators -->
-      		<ol class="carousel-indicators">
-      		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-      		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-      		</ol>
-      		<!-- Wrapper for slides -->
-      		<div class="carousel-inner" role="listbox">
-      		    <div class="item active">
-      		        <img src="images/hi-tech.jpg" alt="a">
-      		    </div>
-      		    <div class="item text-center">
-      		        <img src="images/hi-tech2.jpg" alt="...">
-      		        <div class="carousel-caption"></div>
-      		    </div>
-      		</div>
-    	</div>
-    </div>
-	<!-- КОНЕЦ КАРУСЕЛИ -->
-	<!-- НАЧАЛО СЕТКИ ДЛЯ ДЕСКТОПНЫХ УСТРОЙСТВ -->
-    <div class="container grid-for-desktop-devices">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="services-head">Ваш новый магазин</h2>
-                <hr class="primary">
-                <h2 class="services-head"><small>Впечатлите своих покупателей красивым и удобным интерфейсом со всем необходимым функционалом</small></h2>
-                <br>
-            </div>
+	<div id="site-inner">
+        <!-- Carousel-->
+        <div class="container hidden-xs">
+        	<div id="carousel-services-webDev" class="carousel slide" data-ride="carousel">
+          		<!-- Indicators -->
+          		<ol class="carousel-indicators carousel-indicators-custom">
+          		    <li data-target="#carousel-services-webDev" data-slide-to="0" class="active"></li>
+          		    <li data-target="#carousel-services-webDev" data-slide-to="1"></li>
+          		</ol>
+                <div id="carouselButtons">
+                    <button id="playButton" type="button" class="btn btn-default btn-xs">
+                        <span class="glyphicon glyphicon-play"></span>
+                     </button>
+                    <button id="pauseButton" type="button" class="btn btn-default btn-xs">
+                        <span class="glyphicon glyphicon-pause"></span>
+                    </button>
+                </div>
+          		<!-- Wrapper for slides -->
+          		<div class="carousel-inner" role="listbox">
+          		    <div class="item item-services-webDev active">
+          		        <img src="images/hi-tech.jpg" alt="a">
+          		    </div>
+          		    <div class="item item-services-webDev text-center">
+          		        <img src="images/hi-tech2.jpg" alt="...">
+          		        <div class="carousel-caption"></div>
+          		    </div>
+          		</div>
+
+        	</div>
+
         </div>
-        <div class="row">
-            <div class="text-center col-sm-12 col-md-3 special_offer">
-            	АКЦИЯ!!!
-            	<br>
-            	при заказе пакетного решения
-            	<br>
-            	скидка на ребрендинг
-            	<br>
-            	30%
-            </div>
-            <div class="col-sm-12 col-md-9">
-    			<!-- Модал с предложением для профессиональных организаций -->
-    			<div class="modal fade modal-site-features" id="modal_professional_organisations">
-    				<div class="modal-content text-center professional_bg">
-    					<button type="button" class="close big-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    					<div class="col-xs-offset-2 col-xs-8">
-    						<h3 class="serv-names">Профессиональные организации</h3>
-    						<hr>
-    						<h4 class="modal-h4">Продемонстрируйте свой профессионализм</h4>
-    						<img class="modal_images" src="images/profi.png" alt="">	
-    						<p class="text-muted">Сайт является чрезвычайно удобным способом ответить на вопросы посетителей и показать свою компетентность.</p>
-    						<hr>
-    						<h4 class="modal-h4">Расскажите свою историю</h4>
-    						<img class="modal_images" src="images/story.png" alt="">
-    						<p class="text-muted">Профессиональный путь всегда связан с проблемами, <br> которые возникают у Ваших клиентов, и успешным их решением с Вашей стороны. <br> Предлагаем Вам использовать возможности сети Интернет для того, <br> чтобы поведать о наиболее интересных вызовах в Вашей практике</p>
-    						<hr>
-    						<h4 class="modal-h4">Актуальная информация&nbsp;&mdash; на&nbsp;вес золота</h4>
-    						<img class="modal_images" src="images/relevant.png" alt="">
-    						<p class="text-muted">Публикуйте на Вашем сайте самые важные новости профессиональной сферы, <br> делитесь своим видением, публикуйте авторские статьи</p>
-    						<br>
-    						<br>
-    					</div>
-    				</div>
-    			</div>
-    			<!-- Модал с предложением для медицинских учреждений -->
-    			<div class="modal fade modal-site-features" id="modal_medical_organisations">
-    				<div class="modal-content text-center">
-    					<button type="button" class="close big-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    					<div class="col-xs-offset-2 col-xs-8">
-    						<h3 class="serv-names">Медицинские учреждения</h3>
-    						<hr>
-    						<h4 class="modal-h4">Будьте полезны клиентам всегда, в&nbsp;любое время</h4>
-    						<img class="modal_images" src="images/always.png" alt="">	
-    						<p class="text-muted">Позвольте Вашим специалистам давать ответы посетителям сайта в&nbsp;режиме online, тем самым позволив посетителям со&nbsp;схожими вопросами найти источник полезной информации</p>
-    						<hr>
-    						<h4 class="modal-h4">В дискуссии рождается истина</h4>
-    						<img class="modal_images" src="images/forum.png" alt="">	
-    						<p class="text-muted">Разместив на&nbsp;Вашем <nobr>интернет-ресурсе</nobr> форум, Вы&nbsp;можете быть уверены, что люди смогут обсуждать важные для них вопросы, а&nbsp;Вы&nbsp;сможете задействовать квалифицированного члена медицинского персонала, который даст исчерпывающий ответ, принимая участе в&nbsp;обсуждении наравне с&nbsp;посетителями форума. К&nbsp;тому&nbsp;же, форум&nbsp;&mdash; это постоянная активность на&nbsp;сайте, что влечет за&nbsp;собой подъем в&nbsp;рейтингах поисковых систем, а&nbsp;это в&nbsp;свою очередь будет означать, что Ваше медицинское учреждение всё больше и&nbsp;больше &laquo;на&nbsp;слуху&raquo; в&nbsp;сети.</p>
-    						<hr>
-    						<h4 class="modal-h4">Запись на&nbsp;приём&nbsp;&mdash; не&nbsp;покидая дома</h4>
-    						<img class="modal_images" src="images/doctor.png" alt="">	
-    						<p class="text-muted">Возможность записи на&nbsp;прием к&nbsp;врачу через удобную форму на&nbsp;Вашем сайте позволит значительно сэкономить как время клиента, так и&nbsp;время Вашего персонала, а&nbsp;также облегчит работу по&nbsp;систематизации записей медицинского учреждения</p>
-    						<br>
-    						<br>
-    					</div>
-    				</div>
-    			</div>
-				<!-- Модал с предложением для HoReCa -->
-    			<div class="modal fade modal-site-features" id="modal_horeca_organisations">
-    				<div class="modal-content text-center">
-    					<button type="button" class="close big-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    					<div class="col-xs-offset-2 col-xs-8">
-    						<h3 class="serv-names">HoReCa</h3>
-    						<hr>
-    						<h4 class="modal-h4">От&nbsp;посетителя сайта до&nbsp;Вашего клиента&nbsp;&mdash; за&nbsp;один клик</h4>
-    						<img class="modal_images" src="images/guest.png" alt="">	
-    						<p class="text-muted">Внедрив функционал по&nbsp;моментальному бронированию, можно быть уверенным в&nbsp;том, что гораздо большее число гостей Вашего сайта станут гостями Вашего заведения</p>
-    						<hr>
-    						<h4 class="modal-h4">Один раз увидеть&hellip;</h4>
-    						<img class="modal_images" src="images/see.png" alt="">
-    						<p class="text-muted">Предоставьте возможность посетителям сайта совершить виртуальное путешествие по&nbsp;Вашим восхитительным и&nbsp;уютным интерьерам, ведь сочная и&nbsp;красивая картинка говорит громче тысячи слов</p>
-    						<hr>
-    						<h4 class="modal-h4">С&nbsp;программой лояльности&nbsp;&mdash; на&nbsp;Ты</h4>
-    						<img class="modal_images" src="images/loyalty.png" alt="">
-    						<p class="text-muted">Воспользуйтесь всеми преимуществами, которые даёт использование поощрительных бонусов для постоянных клиентов</p>
-    						<hr>
-    						<h4 class="modal-h4">Всегда на связи</h4>
-    						<img class="modal_images" src="images/connection.png" alt="">
-    						<p class="text-muted">Различные виды оповещений (<nobr>sms-рассылка</nobr>, <nobr>e-mail-рассылка</nobr> <nobr>и т. д.</nobr>) о&nbsp;грядущих мероприятиях/состоянии заказа станет Вашим надежным помощником в&nbsp;организации информирования клиентов</p>
-    						<br>
-    						<br>
-    					</div>
-    				</div>
-    			</div>
-    			<!-- Модал с предложением для производителей -->
-    			<div class="modal fade modal-site-features" id="modal_manufacturers">
-    				<div class="modal-content text-center">
-    					<button type="button" class="close big-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    					<div class="col-xs-offset-2 col-xs-8">
-    						<h3 class="serv-names">Производители</h3>
-    						<hr>
-    						<h4 class="modal-h4">Приоткройте занавес</h4>
-    						<img class="modal_images" src="images/production.png" alt="">
-    						<br>
-    						<br>
-    						<p class="text-muted">Дайте клиентам возможность увидеть Ваши возможности: демонстрация производственного цикла&nbsp;&mdash; это хороший способ ознакомить конечного потребителя с&nbsp;процессом создания необходимой ему продукции, а&nbsp;интерактиваня демонстарция на&nbsp;сайте станет Вашей визитной карточкой</p>
-    						<hr>
-    						<h4 class="modal-h4">Большой ассортимент&nbsp;&mdash; большой плюс</h4>
-    						<img class="modal_images" src="images/choice.png" alt="">
-    						<p class="text-muted">Имея в&nbsp;своём арсенале сайт с&nbsp;возможностью не&nbsp;только показать всё разнообразие продукции, но&nbsp;и&nbsp;дать возможность посетителю самому приобщиться к&nbsp;процессу создания продукта через <nobr>online-конструктор</nobr>, будьте уверены, что Ваш сайт будет показан еще нескольким людям, среди которых с&nbsp;большой вероятностю могут оказаться потенциальные клиенты, потребители, партнеры</p>
-    						<br>
-    						<br>
-    					</div>
-    				</div>
-    			</div>
-    			<!-- Модал с предложением для финансового сектора -->
-    			<div class="modal fade modal-site-features" id="modal_finance">
-    				<div class="modal-content text-center">
-    					<button type="button" class="close big-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    					<div class="col-xs-offset-2 col-xs-8">
-    						<h3 class="serv-names">Финансовый сектор</h3>
-    						<hr>
-    						<h4 class="modal-h4">О&nbsp;состоянии дел&nbsp;&mdash; наглядно</h4>
-    						<img class="modal_images" src="images/visualization.png" alt="">	
-    						<p class="text-muted">Визуализируйте Вашу финансовую отчетность для простоты понимания посетителями, продемонстрируйте рост Ваших ключевых показателей в&nbsp;динамике</p>
-    						<hr>
-    						<h4 class="modal-h4">Сообщите о&nbsp;том, как Вас найти</h4>
-    						<img class="modal_images" src="images/map.png" alt="">
-    						<p class="text-muted">Предоставьте посетителям Вашего сайта возможность увидеть на&nbsp;карте месторасположение Ваших офисов, отделений</p>
-    						<hr>
-    						<h4 class="modal-h4">Совершенствуйтесь online</h4>
-    						<img class="modal_images" src="images/update.png" alt="">
-    						<p class="text-muted">Позвольте посетителям оставлять отзывы и&nbsp;пожелания на&nbsp;Вашем сайте, что позволит учесть здравую, конструктивную критику и&nbsp;повысить качество обслуживания, своевременно укрепив выявленные слабые места</p>
-    						<br>
-    						<br>
-    					</div>
-    				</div>
-    			</div>
-    			<!-- ЭЛЕМЕНТЫ СЕТКИ -->
-            	<div class="row text-center">
-					<div class="col-sm-4 business_realm_item" data-toggle="modal" data-target="#modal_professional_organisations">
-						<h4>Профессиональные<br>
-							организации</h4>
-						<hr>
-						<img class="wow bounceIn" src="images/professional_organisations_icon.png" alt="">
-					</div>
-					<div class="col-sm-4 business_realm_item" data-toggle="modal" data-target="#modal_medical_organisations">
-						<h4>Медицинские<br>
-							учреждения</h4>
-						<hr>
-						<img class="wow bounceIn" src="images/medical_organisations_icon.png" alt="">
-					</div>
-					<div class="col-sm-4 business_realm_item" data-toggle="modal" data-target="#modal_horeca_organisations">
-						<h4 class="aligner">HoReCa</h4>
-						<hr>
-						<img src="images/horeca_organisations_icon.png" alt="" class="wow bounceIn">
-					</div>
-            	</div>
-            	<div class="row text-center">
-					<div class="col-xs-12 col-sm-offset-2 col-sm-4 business_realm_item" data-toggle="modal" data-target="#modal_manufacturers">
-						<h4 class="aligner">Производители</h4>
-						<hr>
-						<img src="images/manufacturers_icon.png" alt="" class="wow bounceIn">
-					</div>
-					<div class="col-xs-12 col-sm-4 business_realm_item" data-toggle="modal" data-target="#modal_finance">
-						<h4>Финансовый<br>
-							сектор</h4>
-						<hr>
-						<img src="images/finance_icon.png" alt="" class="wow bounceIn">
-					</div>
-            	</div>
-            </div>
-        </div>
-    </div>
-    <!-- КОНЕЦ СЕТКИ ДЛЯ ДЕСКТОПНЫХ УСТРОЙСТВ -->
-    <!-- НАЧАЛО АККОРДЕОНА ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ -->
-    <section>
-    	<div class="container accordion-for-mobile-devices">
-    		<div class="row">
+    	<!-- КОНЕЦ КАРУСЕЛИ -->
+    	<!-- НАЧАЛО СЕТКИ ДЛЯ ДЕСКТОПНЫХ УСТРОЙСТВ -->
+        <div class="container grid-for-desktop-devices">
+            <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="services-head">Ваш новый магазин</h2>
+                    <h2 class="services-head">Разработка сайтов</h2>
                     <hr class="primary">
-                    <h2 class="services-head"><small>Впечатлите своих покупателей красивым и удобным интерфейсом со всем необходимым функционалом</small></h2>
+                    <h2 class="services-head"><small>Мы создаем сайты и интернет-магазины, отвечающие всем современным требованиям функциональности и дизайна и работающие на всех устройствах от мобильного до телевизора</small></h2>
                     <br>
                 </div>
             </div>
-    		<div class="text-center col-sm-12 special_offer">
-            	АКЦИЯ
-            	<br>
-            	при заказе пакетного решения<br>
-            	&mdash;&nbsp;скидка на&nbsp;ребрендинг
-            	<br>
-            	30%
+            <div class="row">
+                <div class="text-center col-sm-12 col-md-3 special_offer">
+                	АКЦИЯ!!!
+                	<br>
+                	при заказе пакетного решения
+                	<br>
+                	скидка на ребрендинг
+                	<br>
+                	30%
+                </div>
+                <div class="col-sm-12 col-md-9">
+        			<!-- Модал с предложением для профессиональных организаций -->
+        			<div class="modal fade modal-site-features" id="modal_professional_organisations">
+        				<div class="modal-content text-center professional_bg">
+        					<button type="button" class="close big-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        					<div class="col-xs-offset-2 col-xs-8">
+        						<h3 class="serv-names">Профессиональные организации</h3>
+        						<hr>
+        						<h4 class="modal-h4">Продемонстрируйте свой профессионализм</h4>
+        						<img class="modal_images" src="images/profi.png" alt="">	
+        						<p class="text-muted">Сайт является чрезвычайно удобным способом ответить на вопросы посетителей и показать свою компетентность.</p>
+        						<hr>
+        						<h4 class="modal-h4">Расскажите свою историю</h4>
+        						<img class="modal_images" src="images/story.png" alt="">
+        						<p class="text-muted">Профессиональный путь всегда связан с проблемами, <br> которые возникают у Ваших клиентов, и успешным их решением с Вашей стороны. <br> Предлагаем Вам использовать возможности сети Интернет для того, <br> чтобы поведать о наиболее интересных вызовах в Вашей практике</p>
+        						<hr>
+        						<h4 class="modal-h4">Актуальная информация&nbsp;&mdash; на&nbsp;вес золота</h4>
+        						<img class="modal_images" src="images/relevant.png" alt="">
+        						<p class="text-muted">Публикуйте на Вашем сайте самые важные новости профессиональной сферы, <br> делитесь своим видением, публикуйте авторские статьи</p>
+        						<br>
+        						<br>
+        					</div>
+        				</div>
+        			</div>
+        			<!-- Модал с предложением для медицинских учреждений -->
+        			<div class="modal fade modal-site-features" id="modal_medical_organisations">
+        				<div class="modal-content text-center">
+        					<button type="button" class="close big-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        					<div class="col-xs-offset-2 col-xs-8">
+        						<h3 class="serv-names">Медицинские учреждения</h3>
+        						<hr>
+        						<h4 class="modal-h4">Будьте полезны клиентам всегда, в&nbsp;любое время</h4>
+        						<img class="modal_images" src="images/always.png" alt="">	
+        						<p class="text-muted">Позвольте Вашим специалистам давать ответы посетителям сайта в&nbsp;режиме online, тем самым позволив посетителям со&nbsp;схожими вопросами найти источник полезной информации</p>
+        						<hr>
+        						<h4 class="modal-h4">В дискуссии рождается истина</h4>
+        						<img class="modal_images" src="images/forum.png" alt="">	
+        						<p class="text-muted">Разместив на&nbsp;Вашем <nobr>интернет-ресурсе</nobr> форум, Вы&nbsp;можете быть уверены, что люди смогут обсуждать важные для них вопросы, а&nbsp;Вы&nbsp;сможете задействовать квалифицированного члена медицинского персонала, который даст исчерпывающий ответ, принимая участе в&nbsp;обсуждении наравне с&nbsp;посетителями форума. К&nbsp;тому&nbsp;же, форум&nbsp;&mdash; это постоянная активность на&nbsp;сайте, что влечет за&nbsp;собой подъем в&nbsp;рейтингах поисковых систем, а&nbsp;это в&nbsp;свою очередь будет означать, что Ваше медицинское учреждение всё больше и&nbsp;больше &laquo;на&nbsp;слуху&raquo; в&nbsp;сети.</p>
+        						<hr>
+        						<h4 class="modal-h4">Запись на&nbsp;приём&nbsp;&mdash; не&nbsp;покидая дома</h4>
+        						<img class="modal_images" src="images/doctor.png" alt="">	
+        						<p class="text-muted">Возможность записи на&nbsp;прием к&nbsp;врачу через удобную форму на&nbsp;Вашем сайте позволит значительно сэкономить как время клиента, так и&nbsp;время Вашего персонала, а&nbsp;также облегчит работу по&nbsp;систематизации записей медицинского учреждения</p>
+        						<br>
+        						<br>
+        					</div>
+        				</div>
+        			</div>
+    				<!-- Модал с предложением для HoReCa -->
+        			<div class="modal fade modal-site-features" id="modal_horeca_organisations">
+        				<div class="modal-content text-center">
+        					<button type="button" class="close big-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        					<div class="col-xs-offset-2 col-xs-8">
+        						<h3 class="serv-names">HoReCa</h3>
+        						<hr>
+        						<h4 class="modal-h4">От&nbsp;посетителя сайта до&nbsp;Вашего клиента&nbsp;&mdash; за&nbsp;один клик</h4>
+        						<img class="modal_images" src="images/guest.png" alt="">	
+        						<p class="text-muted">Внедрив функционал по&nbsp;моментальному бронированию, можно быть уверенным в&nbsp;том, что гораздо большее число гостей Вашего сайта станут гостями Вашего заведения</p>
+        						<hr>
+        						<h4 class="modal-h4">Один раз увидеть&hellip;</h4>
+        						<img class="modal_images" src="images/see.png" alt="">
+        						<p class="text-muted">Предоставьте возможность посетителям сайта совершить виртуальное путешествие по&nbsp;Вашим восхитительным и&nbsp;уютным интерьерам, ведь сочная и&nbsp;красивая картинка говорит громче тысячи слов</p>
+        						<hr>
+        						<h4 class="modal-h4">С&nbsp;программой лояльности&nbsp;&mdash; на&nbsp;Ты</h4>
+        						<img class="modal_images" src="images/loyalty.png" alt="">
+        						<p class="text-muted">Воспользуйтесь всеми преимуществами, которые даёт использование поощрительных бонусов для постоянных клиентов</p>
+        						<hr>
+        						<h4 class="modal-h4">Всегда на связи</h4>
+        						<img class="modal_images" src="images/connection.png" alt="">
+        						<p class="text-muted">Различные виды оповещений (<nobr>sms-рассылка</nobr>, <nobr>e-mail-рассылка</nobr> <nobr>и т. д.</nobr>) о&nbsp;грядущих мероприятиях/состоянии заказа станет Вашим надежным помощником в&nbsp;организации информирования клиентов</p>
+        						<br>
+        						<br>
+        					</div>
+        				</div>
+        			</div>
+        			<!-- Модал с предложением для производителей -->
+        			<div class="modal fade modal-site-features" id="modal_manufacturers">
+        				<div class="modal-content text-center">
+        					<button type="button" class="close big-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        					<div class="col-xs-offset-2 col-xs-8">
+        						<h3 class="serv-names">Производители</h3>
+        						<hr>
+        						<h4 class="modal-h4">Приоткройте занавес</h4>
+        						<img class="modal_images" src="images/production.png" alt="">
+        						<br>
+        						<br>
+        						<p class="text-muted">Дайте клиентам возможность увидеть Ваши возможности: демонстрация производственного цикла&nbsp;&mdash; это хороший способ ознакомить конечного потребителя с&nbsp;процессом создания необходимой ему продукции, а&nbsp;интерактиваня демонстарция на&nbsp;сайте станет Вашей визитной карточкой</p>
+        						<hr>
+        						<h4 class="modal-h4">Большой ассортимент&nbsp;&mdash; большой плюс</h4>
+        						<img class="modal_images" src="images/choice.png" alt="">
+        						<p class="text-muted">Имея в&nbsp;своём арсенале сайт с&nbsp;возможностью не&nbsp;только показать всё разнообразие продукции, но&nbsp;и&nbsp;дать возможность посетителю самому приобщиться к&nbsp;процессу создания продукта через <nobr>online-конструктор</nobr>, будьте уверены, что Ваш сайт будет показан еще нескольким людям, среди которых с&nbsp;большой вероятностю могут оказаться потенциальные клиенты, потребители, партнеры</p>
+        						<br>
+        						<br>
+        					</div>
+        				</div>
+        			</div>
+        			<!-- Модал с предложением для финансового сектора -->
+        			<div class="modal fade modal-site-features" id="modal_finance">
+        				<div class="modal-content text-center">
+        					<button type="button" class="close big-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        					<div class="col-xs-offset-2 col-xs-8">
+        						<h3 class="serv-names">Финансовый сектор</h3>
+        						<hr>
+        						<h4 class="modal-h4">О&nbsp;состоянии дел&nbsp;&mdash; наглядно</h4>
+        						<img class="modal_images" src="images/visualization.png" alt="">	
+        						<p class="text-muted">Визуализируйте Вашу финансовую отчетность для простоты понимания посетителями, продемонстрируйте рост Ваших ключевых показателей в&nbsp;динамике</p>
+        						<hr>
+        						<h4 class="modal-h4">Сообщите о&nbsp;том, как Вас найти</h4>
+        						<img class="modal_images" src="images/map.png" alt="">
+        						<p class="text-muted">Предоставьте посетителям Вашего сайта возможность увидеть на&nbsp;карте месторасположение Ваших офисов, отделений</p>
+        						<hr>
+        						<h4 class="modal-h4">Совершенствуйтесь online</h4>
+        						<img class="modal_images" src="images/update.png" alt="">
+        						<p class="text-muted">Позвольте посетителям оставлять отзывы и&nbsp;пожелания на&nbsp;Вашем сайте, что позволит учесть здравую, конструктивную критику и&nbsp;повысить качество обслуживания, своевременно укрепив выявленные слабые места</p>
+        						<br>
+        						<br>
+        					</div>
+        				</div>
+        			</div>
+        			<!-- ЭЛЕМЕНТЫ СЕТКИ -->
+                	<div class="row text-center">
+    					<div class="col-sm-4 business_realm_item" data-toggle="modal" data-target="#modal_professional_organisations">
+    						<h4>Профессиональные<br>
+    							организации</h4>
+    						<hr>
+    						<img class="wow bounceIn" src="images/professional_organisations_icon.png" alt="">
+    					</div>
+    					<div class="col-sm-4 business_realm_item" data-toggle="modal" data-target="#modal_medical_organisations">
+    						<h4>Медицинские<br>
+    							учреждения</h4>
+    						<hr>
+    						<img class="wow bounceIn" src="images/medical_organisations_icon.png" alt="">
+    					</div>
+    					<div class="col-sm-4 business_realm_item" data-toggle="modal" data-target="#modal_horeca_organisations">
+    						<h4 class="aligner">HoReCa</h4>
+    						<hr>
+    						<img src="images/horeca_organisations_icon.png" alt="" class="wow bounceIn">
+    					</div>
+                	</div>
+                	<div class="row text-center">
+    					<div class="col-xs-12 col-sm-offset-2 col-sm-4 business_realm_item" data-toggle="modal" data-target="#modal_manufacturers">
+    						<h4 class="aligner">Производители</h4>
+    						<hr>
+    						<img src="images/manufacturers_icon.png" alt="" class="wow bounceIn">
+    					</div>
+    					<div class="col-xs-12 col-sm-4 business_realm_item" data-toggle="modal" data-target="#modal_finance">
+    						<h4>Финансовый<br>
+    							сектор</h4>
+    						<hr>
+    						<img src="images/finance_icon.png" alt="" class="wow bounceIn">
+    					</div>
+                	</div>
+                </div>
             </div>
-    		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  				<div class="panel panel-default">
-    				<div class="panel-heading" role="tab" id="professionalOrganisationsHeading">
-      					<h4 class="panel-title">
-        					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          						<div class="row text-center">
-          							<h4>Профессиональные<br>организации</h4>
-									<hr>
-									<img class="wow bounceIn" src="images/professional_organisations_icon.png" alt="">
-          						</div>
-       						</a>
-      					</h4>
-    				</div>
-    				<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="professionalOrganisationsHeading">
-      					<div class="panel-body text-center">
-        					<h4 class="modal-h4">Продемонстрируйте свой профессионализм</h4>	
-    						<p class="text-muted">Сайт является чрезвычайно удобным способом <br> ответить на вопросы посетителей и показать свою компетентность</p>
-    						<hr>
-    						<h4 class="modal-h4">Расскажите свою историю</h4>
-    						<p class="text-muted">Профессиональный путь всегда связан с проблемами, <br> которые возникают у Ваших клиентов, и успешным их решением с Вашей стороны. <br> Предлагаем Вам использовать возможности сети Интернет для того, <br> чтобы поведать о наиболее интересных вызовах в Вашей практике</p>
-    						<hr>
-    						<h4 class="modal-h4">Актуальная информация&nbsp;&mdash; на&nbsp;вес золота</h4>
-    						<p class="text-muted">Публикуйте на Вашем сайте самые важные новости профессиональной сферы, <br> делитесь своим видением, публикуйте авторские статьи</p>
-      					</div>
+        </div>
+        <!-- КОНЕЦ СЕТКИ ДЛЯ ДЕСКТОПНЫХ УСТРОЙСТВ -->
+        <!-- НАЧАЛО АККОРДЕОНА ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ -->
+        <section>
+        	<div class="container accordion-for-mobile-devices">
+        		<div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="services-head">Ваш новый магазин</h2>
+                        <hr class="primary">
+                        <h2 class="services-head"><small>Впечатлите своих покупателей красивым и удобным интерфейсом со всем необходимым функционалом</small></h2>
+                        <br>
+                    </div>
+                </div>
+        		<div class="text-center col-sm-12 special_offer">
+                	АКЦИЯ
+                	<br>
+                	при заказе пакетного решения<br>
+                	&mdash;&nbsp;скидка на&nbsp;ребрендинг
+                	<br>
+                	30%
+                </div>
+        		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      				<div class="panel panel-default">
+        				<div class="panel-heading" role="tab" id="professionalOrganisationsHeading">
+          					<h4 class="panel-title">
+            					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              						<div class="row text-center">
+              							<h4>Профессиональные<br>организации</h4>
+    									<hr>
+    									<img class="wow bounceIn" src="images/professional_organisations_icon.png" alt="">
+              						</div>
+           						</a>
+          					</h4>
+        				</div>
+        				<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="professionalOrganisationsHeading">
+          					<div class="panel-body text-center">
+            					<h4 class="modal-h4">Продемонстрируйте свой профессионализм</h4>	
+        						<p class="text-muted">Сайт является чрезвычайно удобным способом <br> ответить на вопросы посетителей и показать свою компетентность</p>
+        						<hr>
+        						<h4 class="modal-h4">Расскажите свою историю</h4>
+        						<p class="text-muted">Профессиональный путь всегда связан с проблемами, <br> которые возникают у Ваших клиентов, и успешным их решением с Вашей стороны. <br> Предлагаем Вам использовать возможности сети Интернет для того, <br> чтобы поведать о наиболее интересных вызовах в Вашей практике</p>
+        						<hr>
+        						<h4 class="modal-h4">Актуальная информация&nbsp;&mdash; на&nbsp;вес золота</h4>
+        						<p class="text-muted">Публикуйте на Вашем сайте самые важные новости профессиональной сферы, <br> делитесь своим видением, публикуйте авторские статьи</p>
+          					</div>
+        				</div>
+        			</div>
+      				<div class="panel panel-default">
+        				<div class="panel-heading" role="tab" id="medicalOrganisationsHeading">
+          					<h4 class="panel-title">
+            					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            						<div class="row text-center">
+            							<h4>Медицинские<br>учреждения</h4>
+    									<hr>
+    									<img class="wow bounceIn" src="images/medical_organisations_icon.png" alt="">
+            						</div>
+            					</a>
+          					</h4>
+        				</div>
+        				<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="medicalOrganisationsHeading">
+          					<div class="panel-body text-center">
+            					<h4 class="modal-h4">Будьте полезны клиентам всегда, в&nbsp;любое время</h4>	
+        						<p class="text-muted">Позвольте Вашим специалистам давать ответы посетителям сайта в&nbsp;режиме online, тем самым позволив посетителям со&nbsp;схожими вопросами найти источник полезной информации</p>
+        						<hr>
+        						<h4 class="modal-h4">В дискуссии рождается истина</h4>
+        						<p class="text-muted">Разместив на&nbsp;Вашем <nobr>интернет-ресурсе</nobr> форум, Вы&nbsp;можете быть уверены, что люди смогут обсуждать важные для них вопросы, а&nbsp;Вы&nbsp;сможете задействовать квалифицированного члена медицинского персонала, который даст исчерпывающий ответ, принимая участе в&nbsp;обсуждении наравне с&nbsp;посетителями форума. К&nbsp;тому&nbsp;же, форум&nbsp;&mdash; это постоянная активность на&nbsp;сайте, что влечет за&nbsp;собой подъем в&nbsp;рейтингах поисковых систем, а&nbsp;это в&nbsp;свою очередь будет означать, что Ваше медицинское учреждение всё больше и&nbsp;больше &laquo;на&nbsp;слуху&raquo; в&nbsp;сети.</p>
+        						<hr>
+        						<h4 class="modal-h4">Запись на&nbsp;приём&nbsp;&mdash; не&nbsp;покидая дома</h4>
+        						<p class="text-muted">Возможность записи на&nbsp;прием к&nbsp;врачу через удобную форму на&nbsp;Вашем сайте позволит значительно сэкономить как время клиента, так и&nbsp;время Вашего персонала, а&nbsp;также облегчит работу по&nbsp;систематизации записей медицинского учреждения</p>
+          					</div>
+        				</div>
+      				</div>
+      				<div class="panel panel-default">
+        				<div class="panel-heading" role="tab" id="horecaHeading">
+          					<h4 class="panel-title">
+            					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              						<div class="row text-center">
+              							<h4>HoReCa</h4>
+    									<hr>
+    									<img src="images/horeca_organisations_icon.png" alt="" class="wow bounceIn">
+              						</div>
+            					</a>
+          					</h4>
+        				</div>
+        				<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="horecaHeading">
+          					<div class="panel-body text-center">
+            					<h4 class="modal-h4">От&nbsp;посетителя сайта до&nbsp;Вашего клиента&nbsp;&mdash; за&nbsp;один клик</h4>	
+        						<p class="text-muted">Внедрив функционал по&nbsp;моментальному бронированию, можно быть уверенным в&nbsp;том, что гораздо большее число гостей Вашего сайта станут гостями Вашего заведения</p>
+        						<hr>
+        						<h4 class="modal-h4">Один раз увидеть&hellip;</h4>
+        						<p class="text-muted">Предоставьте возможность посетителям сайта совершить виртуальное путешествие по&nbsp;Вашим восхитительным и&nbsp;уютным интерьерам, ведь сочная и&nbsp;красивая картинка говорит громче тысячи слов</p>
+        						<hr>
+        						<h4 class="modal-h4">С&nbsp;программой лояльности&nbsp;&mdash; на&nbsp;Ты</h4>
+        						<p class="text-muted">Воспользуйтесь всеми преимуществами, которые даёт использование поощрительных бонусов для постоянных клиентов</p>
+        						<hr>
+        						<h4 class="modal-h4">Всегда на связи</h4>
+        						<p class="text-muted">Различные виды оповещений (<nobr>sms-рассылка</nobr>, <nobr>e-mail-рассылка</nobr> <nobr>и т. д.</nobr>) о&nbsp;грядущих мероприятиях/состоянии заказа станет Вашим надежным помощником в&nbsp;организации информирования клиентов</p>
+          					</div>
+        				</div>
+      				</div>
+      				<div class="panel panel-default">
+        				<div class="panel-heading" role="tab" id="manufacturersHeading">
+          					<h4 class="panel-title">
+            					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            						<div class="row text-center">
+            							<h4 class="aligner">Производители</h4>
+    									<hr>
+    									<img src="images/manufacturers_icon.png" alt="" class="wow bounceIn">
+            						</div>
+            					</a>
+          					</h4>
+        				</div>
+       					<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="manufacturersHeading">
+        					<div class="panel-body text-center">
+            					<h4 class="modal-h4">Приоткройте занавес</h4>	
+        						<p class="text-muted">Дайте клиентам возможность увидеть Ваши возможности: демонстрация производственного цикла&nbsp;&mdash; это хороший способ ознакомить конечного потребителя с&nbsp;процессом создания необходимой ему продукции, а&nbsp;интерактиваня демонстарция на&nbsp;сайте станет Вашей визитной карточкой</p>
+        						<hr>
+        						<h4 class="modal-h4">Большой ассортимент&nbsp;&mdash; большой плюс</h4>
+        						<p class="text-muted">Имея в&nbsp;своём арсенале сайт с&nbsp;возможностью не&nbsp;только показать всё разнообразие продукции, но&nbsp;и&nbsp;дать возможность посетителю самому приобщиться к&nbsp;процессу создания продукта через <nobr>online-конструктор</nobr>, будьте уверены, что Ваш сайт будет показан еще нескольким людям, среди которых с&nbsp;большой вероятностю могут оказаться потенциальные клиенты, потребители, партнеры</p>
+      						</div>
+    					</div>
+        			</div>
+        			<div class="panel panel-default">
+        				<div class="panel-heading" role="tab" id="financeHeading">
+          					<h4 class="panel-title">
+            					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            						<div class="row text-center">
+            							<h4>Финансовый<br>сектор</h4>
+    									<hr>
+    									<img src="images/finance_icon.png" alt="" class="wow bounceIn">
+            						</div>
+            					</a>
+          					</h4>
+        				</div>
+       					<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="financeHeading">
+        					<div class="panel-body text-center">
+            					<h4 class="modal-h4">О&nbsp;состоянии дел&nbsp;&mdash; наглядно</h4>	
+        						<p class="text-muted">Визуализируйте Вашу финансовую отчетность для простоты понимания посетителями, продемонстрируйте рост Ваших ключевых показателей в&nbsp;динамике</p>
+        						<hr>
+        						<h4 class="modal-h4">Сообщите о&nbsp;том, как Вас найти</h4>
+        						<p class="text-muted">Предоставьте посетителям Вашего сайта возможность увидеть на&nbsp;карте месторасположение Ваших офисов, отделений</p>
+        						<hr>
+        						<h4 class="modal-h4">Совершенствуйтесь online</h4>
+        						<p class="text-muted">Позвольте посетителям оставлять отзывы и&nbsp;пожелания на&nbsp;Вашем сайте, что позволит учесть здравую, конструктивную критику и&nbsp;повысить качество обслуживания, своевременно укрепив выявленные слабые места</p>
+      						</div>
+    					</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!-- КОНЕЦ АККОРДЕОНА ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ -->
+        <!-- НАЧАЛО ТАБА С ПАКЕТНЫМ ПРЕДЛОЖЕНИЕМ -->
+        <div class="container">
+        	<div class="col-xs-12 col-sm-9">
+        	<h2 class="services-head">Пакетные решения для Вашего бизнеса</h2>
+        	<hr>
+        	<h2 class="services-head"><small>Теория гласит, что чем больше вариантов выбора, тем меньше шансов, что человек <nobr>что-либо</nobr> выберет. Мы&nbsp;в&nbsp;<span style="color:#000;text-transform: uppercase;">Blank</span><small><span style="color:#E00000;text-transform: uppercase;">solutions</span></small> разработали для Вас оптимальные пакетные решения, которые позволят Вашему бизнесу превзойти даже самые смелые ожидания</small></h2>
+        		<div role="tabpanel">
+      			<!-- Nav tabs -->
+      				<ul class="nav nav-tabs text-center" id="animate_tabs" role="tablist">
+        				<li class="equal_width_tabs" role="presentation" class="active">
+        					<a href="#light" aria-controls="light" role="tab" data-toggle="tab">
+        						<img class="bounceInLeft wow" src="images/light_pack.png" alt="">
+    							<br>
+        						<span style="color: #066091 !important;">Light</span>
+        					</a>
+        				</li>
+        				<li class="equal_width_tabs" role="presentation">
+        					<a href="#basic" aria-controls="basic" role="tab" data-toggle="tab">
+        						<img class="bounceIn wow" src="images/basic_pack.png" alt="">
+    							<br>
+        						<span style="color: #e00000 !important;">Basic</span>
+        					</a>
+        				</li>
+        				<li class="equal_width_tabs" role="presentation">
+        					<a href="#comprehensive" aria-controls="comprehensive" role="tab" data-toggle="tab">
+        					<img class="bounceInRight wow" src="images/comprehensive_icon.png" alt="">
+    						<br>
+        					<span style="color: #000 !important;">Comprehensive</span>
+        					</a>
+        				</li>
+      				</ul>
+    				<!-- Tab panes -->
+    				<div class="tab-content">
+        				<div role="tabpanel" class="tab-pane active fade in" id="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum ligula metus, eget dictum dui tempus tempor. Cras hendrerit dui eget tincidunt porta. Morbi eu lacus urna. Duis est risus, congue a velit eget, pulvinar mollis augue. Nullam consequat cursus quam et tempus. Nunc elementum nunc nulla, non tempus sem semper quis. Nam in ipsum a libero finibus faucibus. Maecenas consequat dapibus ligula, ac blandit augue dapibus at. Nunc interdum, est eu ullamcorper feugiat, odio eros semper nisl, id laoreet purus enim vitae est. Proin finibus libero id lacinia malesuada. Praesent nisl lectus, interdum at urna at, sollicitudin efficitur quam. Quisque mauris ex, aliquet ullamcorper magna et, venenatis tincidunt urna. Nunc vitae diam aliquam, venenatis odio eu, aliquam metus.</div>
+        				<div role="tabpanel" class="tab-pane fade" id="basic">Donec porta faucibus odio, quis consequat urna vulputate interdum. In id facilisis est. Vivamus scelerisque dolor odio, et fringilla massa lacinia at. Fusce faucibus sodales ante, varius tempor massa gravida non. Maecenas vulputate elit sed feugiat suscipit. Fusce venenatis, nibh et congue efficitur, elit est facilisis augue, nec tincidunt nisl leo eu eros. Nulla volutpat enim a euismod blandit. Suspendisse aliquam neque at blandit cursus. Cras vitae risus et diam mattis malesuada. Aenean tincidunt ligula id mauris feugiat volutpat. Quisque vehicula lacinia nunc sit amet tincidunt. Sed nec mauris fermentum, interdum turpis at, convallis lectus. Nulla vulputate eget ligula in ullamcorper.</div>
+        				<div role="tabpanel" class="tab-pane fade" id="comprehensive">Mauris non mattis orci. Praesent posuere dignissim facilisis. Vestibulum ut massa mauris. Integer interdum orci eu ultricies cursus. Nulla facilisi. Maecenas at tincidunt mauris, ac finibus dolor. Nam tincidunt in magna imperdiet egestas. Aliquam tortor nisl, vehicula sit amet commodo quis, blandit vitae arcu. In elementum congue vestibulum. Vivamus quis porta neque, id fringilla libero. Maecenas et lacus quis felis faucibus aliquet. Nam vestibulum, ante eget imperdiet placerat, lectus justo condimentum sem, at euismod dolor turpis sit amet sem. Ut efficitur, quam sed dignissim iaculis, massa quam volutpat lectus, in blandit ante dui quis libero.</div>
     				</div>
     			</div>
-  				<div class="panel panel-default">
-    				<div class="panel-heading" role="tab" id="medicalOrganisationsHeading">
-      					<h4 class="panel-title">
-        					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        						<div class="row text-center">
-        							<h4>Медицинские<br>учреждения</h4>
-									<hr>
-									<img class="wow bounceIn" src="images/medical_organisations_icon.png" alt="">
-        						</div>
-        					</a>
-      					</h4>
-    				</div>
-    				<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="medicalOrganisationsHeading">
-      					<div class="panel-body text-center">
-        					<h4 class="modal-h4">Будьте полезны клиентам всегда, в&nbsp;любое время</h4>	
-    						<p class="text-muted">Позвольте Вашим специалистам давать ответы посетителям сайта в&nbsp;режиме online, тем самым позволив посетителям со&nbsp;схожими вопросами найти источник полезной информации</p>
-    						<hr>
-    						<h4 class="modal-h4">В дискуссии рождается истина</h4>
-    						<p class="text-muted">Разместив на&nbsp;Вашем <nobr>интернет-ресурсе</nobr> форум, Вы&nbsp;можете быть уверены, что люди смогут обсуждать важные для них вопросы, а&nbsp;Вы&nbsp;сможете задействовать квалифицированного члена медицинского персонала, который даст исчерпывающий ответ, принимая участе в&nbsp;обсуждении наравне с&nbsp;посетителями форума. К&nbsp;тому&nbsp;же, форум&nbsp;&mdash; это постоянная активность на&nbsp;сайте, что влечет за&nbsp;собой подъем в&nbsp;рейтингах поисковых систем, а&nbsp;это в&nbsp;свою очередь будет означать, что Ваше медицинское учреждение всё больше и&nbsp;больше &laquo;на&nbsp;слуху&raquo; в&nbsp;сети.</p>
-    						<hr>
-    						<h4 class="modal-h4">Запись на&nbsp;приём&nbsp;&mdash; не&nbsp;покидая дома</h4>
-    						<p class="text-muted">Возможность записи на&nbsp;прием к&nbsp;врачу через удобную форму на&nbsp;Вашем сайте позволит значительно сэкономить как время клиента, так и&nbsp;время Вашего персонала, а&nbsp;также облегчит работу по&nbsp;систематизации записей медицинского учреждения</p>
-      					</div>
-    				</div>
-  				</div>
-  				<div class="panel panel-default">
-    				<div class="panel-heading" role="tab" id="horecaHeading">
-      					<h4 class="panel-title">
-        					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          						<div class="row text-center">
-          							<h4>HoReCa</h4>
-									<hr>
-									<img src="images/horeca_organisations_icon.png" alt="" class="wow bounceIn">
-          						</div>
-        					</a>
-      					</h4>
-    				</div>
-    				<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="horecaHeading">
-      					<div class="panel-body text-center">
-        					<h4 class="modal-h4">От&nbsp;посетителя сайта до&nbsp;Вашего клиента&nbsp;&mdash; за&nbsp;один клик</h4>	
-    						<p class="text-muted">Внедрив функционал по&nbsp;моментальному бронированию, можно быть уверенным в&nbsp;том, что гораздо большее число гостей Вашего сайта станут гостями Вашего заведения</p>
-    						<hr>
-    						<h4 class="modal-h4">Один раз увидеть&hellip;</h4>
-    						<p class="text-muted">Предоставьте возможность посетителям сайта совершить виртуальное путешествие по&nbsp;Вашим восхитительным и&nbsp;уютным интерьерам, ведь сочная и&nbsp;красивая картинка говорит громче тысячи слов</p>
-    						<hr>
-    						<h4 class="modal-h4">С&nbsp;программой лояльности&nbsp;&mdash; на&nbsp;Ты</h4>
-    						<p class="text-muted">Воспользуйтесь всеми преимуществами, которые даёт использование поощрительных бонусов для постоянных клиентов</p>
-    						<hr>
-    						<h4 class="modal-h4">Всегда на связи</h4>
-    						<p class="text-muted">Различные виды оповещений (<nobr>sms-рассылка</nobr>, <nobr>e-mail-рассылка</nobr> <nobr>и т. д.</nobr>) о&nbsp;грядущих мероприятиях/состоянии заказа станет Вашим надежным помощником в&nbsp;организации информирования клиентов</p>
-      					</div>
-    				</div>
-  				</div>
-  				<div class="panel panel-default">
-    				<div class="panel-heading" role="tab" id="manufacturersHeading">
-      					<h4 class="panel-title">
-        					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-        						<div class="row text-center">
-        							<h4 class="aligner">Производители</h4>
-									<hr>
-									<img src="images/manufacturers_icon.png" alt="" class="wow bounceIn">
-        						</div>
-        					</a>
-      					</h4>
-    				</div>
-   					<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="manufacturersHeading">
-    					<div class="panel-body text-center">
-        					<h4 class="modal-h4">Приоткройте занавес</h4>	
-    						<p class="text-muted">Дайте клиентам возможность увидеть Ваши возможности: демонстрация производственного цикла&nbsp;&mdash; это хороший способ ознакомить конечного потребителя с&nbsp;процессом создания необходимой ему продукции, а&nbsp;интерактиваня демонстарция на&nbsp;сайте станет Вашей визитной карточкой</p>
-    						<hr>
-    						<h4 class="modal-h4">Большой ассортимент&nbsp;&mdash; большой плюс</h4>
-    						<p class="text-muted">Имея в&nbsp;своём арсенале сайт с&nbsp;возможностью не&nbsp;только показать всё разнообразие продукции, но&nbsp;и&nbsp;дать возможность посетителю самому приобщиться к&nbsp;процессу создания продукта через <nobr>online-конструктор</nobr>, будьте уверены, что Ваш сайт будет показан еще нескольким людям, среди которых с&nbsp;большой вероятностю могут оказаться потенциальные клиенты, потребители, партнеры</p>
-  						</div>
-					</div>
-    			</div>
-    			<div class="panel panel-default">
-    				<div class="panel-heading" role="tab" id="financeHeading">
-      					<h4 class="panel-title">
-        					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-        						<div class="row text-center">
-        							<h4>Финансовый<br>сектор</h4>
-									<hr>
-									<img src="images/finance_icon.png" alt="" class="wow bounceIn">
-        						</div>
-        					</a>
-      					</h4>
-    				</div>
-   					<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="financeHeading">
-    					<div class="panel-body text-center">
-        					<h4 class="modal-h4">О&nbsp;состоянии дел&nbsp;&mdash; наглядно</h4>	
-    						<p class="text-muted">Визуализируйте Вашу финансовую отчетность для простоты понимания посетителями, продемонстрируйте рост Ваших ключевых показателей в&nbsp;динамике</p>
-    						<hr>
-    						<h4 class="modal-h4">Сообщите о&nbsp;том, как Вас найти</h4>
-    						<p class="text-muted">Предоставьте посетителям Вашего сайта возможность увидеть на&nbsp;карте месторасположение Ваших офисов, отделений</p>
-    						<hr>
-    						<h4 class="modal-h4">Совершенствуйтесь online</h4>
-    						<p class="text-muted">Позвольте посетителям оставлять отзывы и&nbsp;пожелания на&nbsp;Вашем сайте, что позволит учесть здравую, конструктивную критику и&nbsp;повысить качество обслуживания, своевременно укрепив выявленные слабые места</p>
-  						</div>
-					</div>
-    			</div>
-    		</div>
-    	</div>
-    </section>
-    <!-- КОНЕЦ АККОРДЕОНА ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ -->
-    <!-- НАЧАЛО ТАБА С ПАКЕТНЫМ ПРЕДЛОЖЕНИЕМ -->
-    <div class="container">
-    	<div class="col-xs-12 col-sm-9">
-    	<h2 class="services-head">Пакетные решения для Вашего бизнеса</h2>
-    	<hr>
-    	<h2 class="services-head"><small>Теория гласит, что чем больше вариантов выбора, тем меньше шансов, что человек <nobr>что-либо</nobr> выберет. Мы&nbsp;в&nbsp;<span style="color:#000;text-transform: uppercase;">Blank</span><small><span style="color:#E00000;text-transform: uppercase;">solutions</span></small> разработали для Вас оптимальные пакетные решения, которые позволят Вашему бизнесу превзойти даже самые смелые ожидания</small></h2>
-    		<div role="tabpanel">
-  			<!-- Nav tabs -->
-  				<ul class="nav nav-tabs text-center" id="animate_tabs" role="tablist">
-    				<li class="equal_width_tabs" role="presentation" class="active">
-    					<a href="#light" aria-controls="light" role="tab" data-toggle="tab">
-    						<img class="bounceInLeft wow" src="images/light_pack.png" alt="">
-							<br>
-    						<span style="color: #066091 !important;">Light</span>
-    					</a>
-    				</li>
-    				<li class="equal_width_tabs" role="presentation">
-    					<a href="#basic" aria-controls="basic" role="tab" data-toggle="tab">
-    						<img class="bounceIn wow" src="images/basic_pack.png" alt="">
-							<br>
-    						<span style="color: #e00000 !important;">Basic</span>
-    					</a>
-    				</li>
-    				<li class="equal_width_tabs" role="presentation">
-    					<a href="#comprehensive" aria-controls="comprehensive" role="tab" data-toggle="tab">
-    					<img class="bounceInRight wow" src="images/comprehensive_icon.png" alt="">
-						<br>
-    					<span style="color: #000 !important;">Comprehensive</span>
-    					</a>
-    				</li>
-  				</ul>
-				<!-- Tab panes -->
-				<div class="tab-content">
-    				<div role="tabpanel" class="tab-pane active fade in" id="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum ligula metus, eget dictum dui tempus tempor. Cras hendrerit dui eget tincidunt porta. Morbi eu lacus urna. Duis est risus, congue a velit eget, pulvinar mollis augue. Nullam consequat cursus quam et tempus. Nunc elementum nunc nulla, non tempus sem semper quis. Nam in ipsum a libero finibus faucibus. Maecenas consequat dapibus ligula, ac blandit augue dapibus at. Nunc interdum, est eu ullamcorper feugiat, odio eros semper nisl, id laoreet purus enim vitae est. Proin finibus libero id lacinia malesuada. Praesent nisl lectus, interdum at urna at, sollicitudin efficitur quam. Quisque mauris ex, aliquet ullamcorper magna et, venenatis tincidunt urna. Nunc vitae diam aliquam, venenatis odio eu, aliquam metus.</div>
-    				<div role="tabpanel" class="tab-pane fade" id="basic">Donec porta faucibus odio, quis consequat urna vulputate interdum. In id facilisis est. Vivamus scelerisque dolor odio, et fringilla massa lacinia at. Fusce faucibus sodales ante, varius tempor massa gravida non. Maecenas vulputate elit sed feugiat suscipit. Fusce venenatis, nibh et congue efficitur, elit est facilisis augue, nec tincidunt nisl leo eu eros. Nulla volutpat enim a euismod blandit. Suspendisse aliquam neque at blandit cursus. Cras vitae risus et diam mattis malesuada. Aenean tincidunt ligula id mauris feugiat volutpat. Quisque vehicula lacinia nunc sit amet tincidunt. Sed nec mauris fermentum, interdum turpis at, convallis lectus. Nulla vulputate eget ligula in ullamcorper.</div>
-    				<div role="tabpanel" class="tab-pane fade" id="comprehensive">Mauris non mattis orci. Praesent posuere dignissim facilisis. Vestibulum ut massa mauris. Integer interdum orci eu ultricies cursus. Nulla facilisi. Maecenas at tincidunt mauris, ac finibus dolor. Nam tincidunt in magna imperdiet egestas. Aliquam tortor nisl, vehicula sit amet commodo quis, blandit vitae arcu. In elementum congue vestibulum. Vivamus quis porta neque, id fringilla libero. Maecenas et lacus quis felis faucibus aliquet. Nam vestibulum, ante eget imperdiet placerat, lectus justo condimentum sem, at euismod dolor turpis sit amet sem. Ut efficitur, quam sed dignissim iaculis, massa quam volutpat lectus, in blandit ante dui quis libero.</div>
-				</div>
-			</div>
-    	</div>
-    	<div class="col-xs-12 col-sm-3">
-    		<h2 class="text-center" style="color: #e00000;">Свежие статьи</h2>
-    	</div>
+        	</div>
+        	<div class="col-xs-12 col-sm-3">
+        		<h2 class="text-center" style="color: #e00000;">Свежие статьи</h2>
+        	</div>
+        </div>
     </div>
 	<footer id="footer">
 		<div class="container">
@@ -531,6 +545,16 @@
 						};
 		    });
 		</script>
+        <script type="text/javascript">
+        //Script for carousel play/stop buttons
+            $('#playButton').click(function () {
+                $('#carousel-services-webDev').carousel('cycle');
+            });
+            $('#pauseButton').click(function () {
+                $('#carousel-services-webDev').carousel('pause');
+            });
+        </script>
+
 		<script type="text/javascript">
 			$(".business_realm_item").click(function(e){
 			    e.preventDefault();
