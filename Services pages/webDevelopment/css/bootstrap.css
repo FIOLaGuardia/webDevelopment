@@ -4908,23 +4908,10 @@ button.close {
   border: 0;
   -webkit-appearance: none; }
 
-.modal-open.modal-site-features {
-  /*overflow: hidden;*/ }
-
-.modal-open[style] {
-padding-right: 0px !important;
-}
-
-.modal.fade.in[style]{
-  padding-right: 0px !important;
-}
-
-
-
-.modal.modal-site-features {
+.modal {
   display: none;
   overflow: hidden;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -4947,13 +4934,13 @@ padding-right: 0px !important;
     -o-transform: translate(0, 0);
     transform: translate(0, 0); }
 
-.modal-open .modal .modal-site-features {
-  /*overflow-x: hidden;
-  overflow-y: auto; */}
+.modal-open .modal  {
+  overflow-x: hidden;
+  overflow-y: auto; }
 
 .modal {
   display: none;
-  /*overflow: hidden;*/
+  overflow: hidden;
   position: fixed;
   top: 0;
   right: 0;
