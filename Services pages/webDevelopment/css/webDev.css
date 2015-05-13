@@ -1,0 +1,109 @@
+/*Selection menu with five business categories and special offer*/
+.special_offer {
+  color: white;
+  background-color: #066091;
+  font-size: 31px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.business_realm_item {
+  padding-top: 15px;
+  height: 230px;
+}
+
+.business_realm_item:hover {
+  border: 1px solid #066091;
+  cursor: pointer;
+}
+
+/*aligning all items*/
+.aligner {
+  padding-bottom: 22px;
+}
+
+.big-close {
+  font-size: 35px;
+  margin-right: 5px;
+}
+
+.modal-content {
+  height: 100%;
+  overflow-y: auto;
+  background-color: transparent;
+}
+
+.modal-content.professional_bg {
+  background-image: url('images/a.png');
+}
+
+.modal-h4 {
+  color: #066091;
+}
+
+.modal_images {
+  width: 100px;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background: transparent !important;
+}
+
+#professionalOrganisationsHeading, #medicalOrganisationsHeading, #horecaHeading, #manufacturersHeading, #financeHeading {
+  background-color: #fff;
+}
+
+/*Публикации как кнопка для больших экранов и как пункт меню - для мобильных устройств*/
+@media (min-width: 768px) {
+  .mobile-devices {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop-devices {
+    display: none !important;
+  }
+}
+
+/*Аккордеон для мобильных устройств и сетка - для компьютеров*/
+@media (min-width: 768px) {
+  .accordion-for-mobile-devices {
+    display: none;
+  }
+  .grid-for-desktop-devices{
+    display: block;
+  }
+  .logo-type {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .accordion-for-mobile-devices {
+    display: block;
+  }
+  .grid-for-desktop-devices{
+    display: none;
+  }
+  .logo-type {
+    font-size: 30px !important;
+  }
+}
+
+.equal_width_tabs {
+  width: 32%;
+}
+
+
+/*ПЕРЕОПРЕДЕЛЕНИЕ ДЛЯ ТОГО, ЧТОБЫ ВКЛАДКА ОТОБРАЖАЛИСЬ ПО ЦЕНТРУ*/
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+     zoom:1; /* hasLayout ie7 trigger */
+}
+
+.nav-tabs, .nav-pills {
+    text-align:center;
+}
