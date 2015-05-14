@@ -51,7 +51,7 @@
 				<div class="opener-holder">
 					<a href="#" class="nav-opener"><span></span></a>
 				</div>
-				<a href="http://tympanus.net/codrops/?p=23525" class="btn btn-primary desktop-devices">Публикации</a>
+				<a href="#" class="btn btn-primary desktop-devices">Публикации</a>
 				<div class="nav-drop">
 					<ul>
 						<li class="active visible-sm visible-xs"><a href="#">Home</a></li>
@@ -60,7 +60,7 @@
 						<li><a href="#">Методология</a></li>
 						<li><a href="#">Стоимость услуг</a></li>
 						<li><a href="#">Контакты</a></li>
-						<li class="mobile-devices"><a href="http://tympanus.net/codrops/?p=23525">Публикации</a>
+						<li class="mobile-devices"><a href="#">Публикации</a>
 					</ul>
 					<div class="drop-holder visible-sm visible-xs">
 						<span>Follow Us</span>
@@ -132,8 +132,41 @@
                 	30%
                 </div>
                 <div class="col-sm-12 col-md-9">
+                    <!-- ЭЛЕМЕНТЫ СЕТКИ -->
+                    <div class="row text-center">
+                        <div class="col-sm-4 business_realm_item" data-toggle="modal" data-target="#modal_professional_organisations">
+                            <h4>Профессиональные<br>
+                                организации</h4>
+                            <hr>
+                            <img class="wow bounceIn" src="images/professional_organisations_icon.png" alt="">
+                        </div>
+                        <div class="col-sm-4 business_realm_item" data-toggle="modal" data-target="#modal_medical_organisations">
+                            <h4>Медицинские<br>
+                                учреждения</h4>
+                            <hr>
+                            <img class="wow bounceIn" src="images/medical_organisations_icon.png" alt="">
+                        </div>
+                        <div class="col-sm-4 business_realm_item" data-toggle="modal" data-target="#modal_horeca_organisations">
+                            <h4 class="aligner">HoReCa</h4>
+                            <hr>
+                            <img src="images/horeca_organisations_icon.png" alt="" class="wow bounceIn">
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-xs-12 col-sm-offset-2 col-sm-4 business_realm_item" data-toggle="modal" data-target="#modal_manufacturers">
+                            <h4 class="aligner">Производители</h4>
+                            <hr>
+                            <img src="images/manufacturers_icon.png" alt="" class="wow bounceIn">
+                        </div>
+                        <div class="col-xs-12 col-sm-4 business_realm_item" data-toggle="modal" data-target="#modal_finance">
+                            <h4>Финансовый<br>
+                                сектор</h4>
+                            <hr>
+                            <img src="images/finance_icon.png" alt="" class="wow bounceIn">
+                        </div>
+                    </div>
         			<!-- Модал с предложением для профессиональных организаций -->
-        			<div class="modal fade " id="modal_professional_organisations">
+        			<div class="modal modal-industry-features" id="modal_professional_organisations">
         				<div class="modal-content text-center professional_bg">
         					<button type="button" class="close big-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         					<div class="col-xs-offset-2 col-xs-8">
@@ -156,7 +189,7 @@
         				</div>
         			</div>
         			<!-- Модал с предложением для медицинских учреждений -->
-        			<div class="modal fade " id="modal_medical_organisations">
+        			<div class="modal modal-industry-features" id="modal_medical_organisations">
         				<div class="modal-content text-center">
         					<button type="button" class="close big-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         					<div class="col-xs-offset-2 col-xs-8">
@@ -179,7 +212,7 @@
         				</div>
         			</div>
     				<!-- Модал с предложением для HoReCa -->
-        			<div class="modal fade " id="modal_horeca_organisations">
+        			<div class="modal modal-industry-features" id="modal_horeca_organisations">
         				<div class="modal-content text-center">
         					<button type="button" class="close big-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         					<div class="col-xs-offset-2 col-xs-8">
@@ -206,7 +239,7 @@
         				</div>
         			</div>
         			<!-- Модал с предложением для производителей -->
-        			<div class="modal fade" id="modal_manufacturers">
+        			<div class="modal modal-industry-features" id="modal_manufacturers">
         				<div class="modal-content text-center">
         					<button type="button" class="close big-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         					<div class="col-xs-offset-2 col-xs-8">
@@ -227,7 +260,7 @@
         				</div>
         			</div>
         			<!-- Модал с предложением для финансового сектора -->
-        			<div class="modal fade" id="modal_finance">
+        			<div class="modal modal-industry-features" id="modal_finance">
         				<div class="modal-content text-center">
         					<button type="button" class="close big-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         					<div class="col-xs-offset-2 col-xs-8">
@@ -249,39 +282,6 @@
         					</div>
         				</div>
         			</div>
-        			<!-- ЭЛЕМЕНТЫ СЕТКИ -->
-                	<div class="row text-center">
-    					<div class="col-sm-4 business_realm_item" data-toggle="modal" data-target="#modal_professional_organisations">
-    						<h4>Профессиональные<br>
-    							организации</h4>
-    						<hr>
-    						<img class="wow bounceIn" src="images/professional_organisations_icon.png" alt="">
-    					</div>
-    					<div class="col-sm-4 business_realm_item" data-toggle="modal" data-target="#modal_medical_organisations">
-    						<h4>Медицинские<br>
-    							учреждения</h4>
-    						<hr>
-    						<img class="wow bounceIn" src="images/medical_organisations_icon.png" alt="">
-    					</div>
-    					<div class="col-sm-4 business_realm_item" data-toggle="modal" data-target="#modal_horeca_organisations">
-    						<h4 class="aligner">HoReCa</h4>
-    						<hr>
-    						<img src="images/horeca_organisations_icon.png" alt="" class="wow bounceIn">
-    					</div>
-                	</div>
-                	<div class="row text-center">
-    					<div class="col-xs-12 col-sm-offset-2 col-sm-4 business_realm_item" data-toggle="modal" data-target="#modal_manufacturers">
-    						<h4 class="aligner">Производители</h4>
-    						<hr>
-    						<img src="images/manufacturers_icon.png" alt="" class="wow bounceIn">
-    					</div>
-    					<div class="col-xs-12 col-sm-4 business_realm_item" data-toggle="modal" data-target="#modal_finance">
-    						<h4>Финансовый<br>
-    							сектор</h4>
-    						<hr>
-    						<img src="images/finance_icon.png" alt="" class="wow bounceIn">
-    					</div>
-                	</div>
                 </div>
             </div>
         </div>
@@ -302,7 +302,7 @@
         				<div class="panel-heading" role="tab" id="professionalOrganisationsHeading">
           					<h4 class="panel-title">
             					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              						<div class="row text-center">
+              						
               							<h4>Профессиональные<br>организации</h4>
     									<hr>
     									<img class="wow bounceIn" src="images/professional_organisations_icon.png" alt="">
@@ -424,6 +424,28 @@
     					</div>
         			</div>
         		</div>
+                    <!-- Button trigger modal -->
+                      <a data-toggle="modal" href="#myModal1" class="btn btn-primary btn-lg">Launch demo modal</a>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                              <h4 class="modal-title">Modal title</h4>
+                            </div>
+                            <div class="modal-body">
+                              ...
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                      </div><!-- /.modal -->
+
         	</div>
         </section>
         <!-- КОНЕЦ АККОРДЕОНА ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ -->

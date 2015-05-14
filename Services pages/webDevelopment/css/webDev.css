@@ -40,20 +40,27 @@ hr {
   border-width: 2px;
 }
 
-.modal-dialog {
+/*Fullscreen modal window*/
+.modal-industry-features {
+  z-index: 9999;
+  background-color: #fff;
+}
+
+.modal-industry-features .modal-dialog {
   width: 100%;
-  height: 100%;
   padding: 0;
-
 }
 
-.modal-content {
-  overflow-y: auto; 
-  margin-top: 105px;
-  min-height: 100%; 
-  height: auto;
+.modal-industry-features .modal-content {  
   border-radius: 0;
+  background-color: transparent;
 }
+
+.modal-industry-features .modal-backdrop.in {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
 
 /*===============================================
 Slider styling
