@@ -184,6 +184,11 @@ padding-right: 0px !important;
   width: 100px;
 }
 
+/*Avoiding unexpected word breakage*/
+.non-breaking {
+  white-space: nowrap;
+}
+
 .carousel-control.left, .carousel-control.right {
   background: transparent !important;
 }
@@ -246,3 +251,4 @@ padding-right: 0px !important;
 .nav-tabs, .nav-pills {
     text-align:center;
 }
+
