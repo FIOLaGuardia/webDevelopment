@@ -132,7 +132,10 @@ Artur's code
   margin-right: 5px;
 }
 
-
+/*Avoiding unexpected word breakage*/
+.non-breaking {
+  white-space: nowrap;
+}
 
 .modal-content.professional_bg {
   background-image: url('images/a.png');
@@ -154,7 +157,7 @@ Artur's code
   background-color: #fff;
 }
 
-/*Публикации как кнопка для больших экранов и как пункт меню - для мобильных устройств*/
+/*Publications as a button for desktop and menu item for mobile*/
 @media (min-width: 768px) {
   .mobile-devices {
     display: none !important;
@@ -167,7 +170,7 @@ Artur's code
   }
 }
 
-/*Аккордеон для мобильных устройств и сетка - для компьютеров*/
+/*accordion for mobile and grid for desktop*/
 @media (min-width: 768px) {
   .accordion-for-mobile-devices {
     display: none;
@@ -197,7 +200,7 @@ Artur's code
 }
 
 
-/*ПЕРЕОПРЕДЕЛЕНИЕ ДЛЯ ТОГО, ЧТОБЫ ВКЛАДКА ОТОБРАЖАЛИСЬ ПО ЦЕНТРУ*/
+/*center tabs*/
 .nav-tabs > li, .nav-pills > li {
     float:none;
     display:inline-block;
